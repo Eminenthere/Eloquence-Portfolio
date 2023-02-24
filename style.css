@@ -8,6 +8,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -44,10 +46,13 @@ a {
     /* or 24px */
 }
 
+.br-6 {
+    border-radius: 6px;
+}
+
 .btn {
     background-color: #632BFF;
     border: 2px solid transparent;
-    border-radius: 6px;
     display: inline-flex;
     padding: 14px 24px;
 
@@ -69,6 +74,34 @@ a {
     cursor: pointer;
 }
 
-
-
 /* ---------------------------- Default Settings ---------------------------- */
+
+/* --------------------- NAVBAR --------------------- */
+
+nav {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: #F5F5F5;
+    padding: 8px;
+}
+
+.navbar-icons {
+    background-color: #F5F5F5;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 24px;
+    transition: all 0.3s ease-out;
+}
+
+.navbar-icons:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
