@@ -91,6 +91,10 @@ h3 {
     transition: all 0.5s ease;
 }
 
+.not-active-icon {
+    display: none;
+}
+
 .nav-link-icon:hover {
     background-color: #fff;
 }
@@ -108,4 +112,14 @@ nav {
     bottom: 32px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+@media screen and (max-width: 480px) {
+    .nav-link-icon {
+        padding: 8px 18px;
+    }
+
+    .nav-link-icon:hover svg {
+        transform: scale(1.125);
+    }
 }
