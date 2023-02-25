@@ -41,30 +41,51 @@ h3 {
     /* or 24px */
 }
 
+a {
+    display: inline-block;
+}
+
 .br-6 {
     border-radius: 6px;
 }
 
+.pad-32 {
+    padding: 32px;
+}
+
 .btn {
-    background-color: #632BFF;
-    border: 2px solid transparent;
+    background-color: #F5F5F5;
     display: inline-flex;
     padding: 14px 24px;
-    color: #fff;
-    font-weight: 600;
-    font-size: 18px;
+    color: #141414;
+    font-weight: 500;
+    font-size: 16px;
     transition: all 0.5s ease;
 }
 
-.secondary-btn {
-    background-color: transparent;
-    border: 2px solid #632BFF;
-    color: #632BFF;
+.primary-btn {
+    background-color: #632BFF;
+    color: #fff;
+}
+
+.download-btn {
+    display: inline-flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-height: 54px;
 }
 
 .btn:hover {
-    transform: scale(1.04);
+    background-color: #632BFF;
     cursor: pointer;
+    color: #fff;
+}
+
+.btn:hover svg {
+    cursor: pointer;
+    stroke: #fff;
 }
 
 /* ---------------------------- Default Settings ---------------------------- */
