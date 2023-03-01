@@ -13,11 +13,6 @@ body {
     margin: 0 auto;
 }
 
-a {
-    color: unset;
-    display: inline-block;
-}
-
 :root {
     --dark-bg: #000;
     --color-primary: #D7FF64;
@@ -58,6 +53,57 @@ a {
     --animation: all 540ms cubic-bezier(0.46,0.03,0.52,0.96);
 }
 
+h1 {
+    color: var(--color-white);
+    font-family: var(--font-lora);
+    font-weight: var(--bold-weight);
+    font-size: var(--font-48);
+}
+
+h2 {
+    color: var(--color-white);
+    font-size: var(--font-32);
+    font-family: var(--font-gloock);
+    font-weight: var(--normal-weight);
+}
+
+h3 {
+    color: var(--color-white);
+    font-size: var(--font-24);
+    font-family: var(--font-gloock);
+    font-weight: var(--normal-weight);
+}
+
+h4 {
+    color: var(--color-primary);
+    font-family: var(--font-inter);
+    font-size: var(--font-16);
+    font-weight: var(--bold-weight);
+}
+
+a {
+    color: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* -------------------------- HEADER -------------------------- */
+
+.header-logo svg {
+    color: var(--color-primary);
+    transition: none;
+}
+
+.header-logo:hover svg {
+    color: var(--dark-bg);
+}
+
+.download-cv svg {
+    transition: none;
+}
+
 .btn {
     border-radius: var(--border-rad-32);
 
@@ -66,23 +112,23 @@ a {
     font-weight: var(--medium-weight);
     letter-spacing: var(--font-space-3);
 
+    padding: var(--padding-32) var(--padding-48);
+
     transition: var(--animation);
 }
 
 .primary-80-btn {
     background-color: var(--color-primary);
-    padding: var(--padding-32) var(--padding-48);
+    padding: var(--padding-32) var(--padding-80);
 }
 
 .primary-btn {
     background-color: var(--color-primary);
-    padding: var(--padding-32) var(--padding-80);
 }
 
 .secondary-btn {
     background-color: var(--color-secondary);
     color: var(--color-white);
-    padding: var(--padding-32) var(--padding-48);
 }
 
 .btn:hover {
