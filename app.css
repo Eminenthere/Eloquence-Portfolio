@@ -50,7 +50,7 @@ body {
 
     --height-82: 82px;
 
-    --animation: all 540ms cubic-bezier(0.46,0.03,0.52,0.96);
+    --animation: all 540ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
 
 h1 {
@@ -89,20 +89,7 @@ a {
     gap: 10px;
 }
 
-/* -------------------------- HEADER -------------------------- */
-
-.header-logo svg {
-    color: var(--color-primary);
-    transition: none;
-}
-
-.header-logo:hover svg {
-    color: var(--dark-bg);
-}
-
-.download-cv svg {
-    transition: none;
-}
+/* -------------------------- Buttons -------------------------- */
 
 .btn {
     border-radius: var(--border-rad-32);
@@ -138,4 +125,30 @@ a {
 .secondary-btn:hover {
     background-color: var(--color-primary);
     color: var(--dark-bg);
+}
+
+/* -------------------------- HEADER -------------------------- */
+
+header {
+    padding: var(--padding-32);
+    padding-bottom: 0;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo svg {
+    color: var(--color-primary);
+    transition: none;
+}
+
+.header-logo:hover svg {
+    color: var(--dark-bg);
+}
+
+.download-cv svg {
+    transition: none;
 }
